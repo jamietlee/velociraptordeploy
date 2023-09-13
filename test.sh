@@ -1,7 +1,11 @@
 #!/bin/bash -xe
-sudo mkdir -p /velociraptor
+mkdir velociraptor
+cd testdir
 
-sudo cat > /velociraptor/test.txt << EOF
+touch velociraptor.service.txt
+chmod u+w velociraptor.service.txt
+
+cat > velociraptor.service.txt << EOF
 [Unit]
 Description=Velociraptor linux amd64
 After=syslog.target network.target
