@@ -1,6 +1,6 @@
 #!/bin/bash -xe
 mkdir velociraptor
-cd testdir
+cd velociraptor
 
 touch velociraptor.service.txt
 chmod u+w velociraptor.service.txt
